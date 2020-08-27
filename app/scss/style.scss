@@ -1,15 +1,98 @@
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
+@import 'vars';
+@import 'global';
 
 
-.box {
+
+.header-inner {
   display: flex;
-  transition: inherit;
+  justify-content: space-between;
+}
+
+
+.header-top {
+  height: 91px;
+
+  &__logo {
+    padding-top: 25px;
+  }
+
+  &__panel {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  &__tel {
+    font-size: 15px;
+    line-height: 24px;
+    color: $link-color;
+    margin-right: 30px;
+
+    span {
+      color: $orange;
+    }
+  }
+  &__basket {
+      width: 34px;
+      height: 34px;
+      background-color: #f5f5f5;
+      border-radius: 50%;
+      margin-right: 26px;
+      position: relative;
+
+      span {
+        padding: 5px 6px;
+        position: absolute;
+        font-size: 11px;
+        line-height: 8px;
+        font-weight: 600;
+        font-family: 'Open Sans', sans-serif;
+        color: #fff;
+        background-color: $orange;
+        border-radius: 50%;
+        top: -8px;
+        right: -5px;
+      }
+  }
+
+  &__btn {
+    width: 72px;
+    padding: 9.5px;
+    text-align: center;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  &__btn-login {
+    background-color: $green;
+    margin-right: 7px;
+  }
+
+  &__btn-register {
+    background-color: $orange;
+  }
+}
+
+.header-menu {
+  background-color: $title-color;
+  
+  &__list{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 60px;
+  }
+
+  &__item + li {
+    margin-left: 38px;
+  }
+
+  &__link {
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+  }
 }
