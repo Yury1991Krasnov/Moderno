@@ -13,7 +13,7 @@ a {
   display: inline-block;
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
-  
+
 }
 
 ul,
@@ -23,8 +23,20 @@ li {
   list-style: none;
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.title {
+  font-weight: 700;
+}
+
+.text {
+ font-weight: 500;
 }
